@@ -1,0 +1,12 @@
+@import "./color";
+@import "./config";
+h1{
+    color: $primary-color;
+}
+header{
+    nav{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
