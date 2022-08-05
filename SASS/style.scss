@@ -1,12 +1,84 @@
 @import "./color";
 @import "./config";
-h1{
-    color: $primary-color;
-}
-header{
-    nav{
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
+// h1 {
+//   color: $primary-color;
+// }
+header {
+  padding: 2em;
+  nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    ul {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1.5em;
+      li {
+        list-style: none;
+        a {
+          color: $pText;
+          text-decoration: none;
+          &:hover {
+            border-bottom: 2px solid $primary-color;
+            transition: ease;
+            transition-delay: 2ms;
+          }
+        }
+      }
     }
+    button {
+      background-color: $primary-color;
+      color: $buttonText;
+      padding: 1em;
+      border-radius: 10px;
+      border: none;
+      &:hover {
+        opacity: 0.5;
+        cursor: pointer;
+      }
+    }
+    span svg {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header nav span svg {
+    display: block;
+  }
+  header nav {
+    padding: 2em 1em;
+  }
+  header nav ul {
+    display: none;
+  }
+  button {
+    display: none;
+  }
+}
+.heroSection {
+  display: flex;
+  justify-content: space-around;
+  // padding: 1em 3em;
+  h1 {
+    width: 408px;
+    color: $h1Text;
+    font-weight: 800;
+    font-size: 3vw;
+    // line-height: 68px;
+    letter-spacing: -0.305053px;
+    text-align: left;
+  }
+  p {
+    width: 394px;
+    color: $pText;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    // line-height: 29px;
+    letter-spacing: -0.305053px;
+    text-align: left;
+  }
 }
