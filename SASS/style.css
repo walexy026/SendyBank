@@ -45,12 +45,18 @@ header nav span svg {
   display: none;
 }
 
+@media screen and (max-width: 302px) {
+  header nav {
+    gap: 6em !important;
+  }
+}
 @media screen and (max-width: 768px) {
   header nav span svg {
     display: block;
   }
   header nav {
     padding: 2em 1em;
+    gap: 10em;
   }
   header nav ul {
     display: none;
@@ -58,25 +64,35 @@ header nav span svg {
   button {
     display: none;
   }
+  .heroSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 .heroSection {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
+  padding: 1em;
 }
-.heroSection h1 {
-  width: 408px;
+.heroSection div > h1 {
   color: #0D1321;
   font-weight: 800;
   font-size: 3vw;
   letter-spacing: -0.305053px;
   text-align: left;
+  padding-bottom: 1em;
 }
-.heroSection p {
-  width: 394px;
+.heroSection div > p {
   color: #7A7A7A;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
   letter-spacing: -0.305053px;
   text-align: left;
+  padding-bottom: 1em;
+}
+.heroSection .phoneDisplay img {
+  width: 100%;
+  height: auto;
 }/*# sourceMappingURL=style.css.map */

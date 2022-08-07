@@ -43,13 +43,18 @@ header {
     }
   }
 }
-
+@media screen and (max-width: 302px){
+  header nav{
+    gap:6em !important;
+  }
+}
 @media screen and (max-width: 768px) {
   header nav span svg {
     display: block;
   }
   header nav {
     padding: 2em 1em;
+    gap: 10em;
   }
   header nav ul {
     display: none;
@@ -57,22 +62,28 @@ header {
   button {
     display: none;
   }
+  .heroSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 .heroSection {
   display: flex;
-  justify-content: space-around;
-  // padding: 1em 3em;
-  h1 {
-    width: 408px;
+  justify-content: space-evenly;
+  padding: 1em;
+  div > h1 {
+    // width: 408px;
     color: $h1Text;
     font-weight: 800;
     font-size: 3vw;
     // line-height: 68px;
     letter-spacing: -0.305053px;
     text-align: left;
+    padding-bottom: 1em;
   }
-  p {
-    width: 394px;
+  div > p {
+    // width: 394px;
     color: $pText;
     font-style: normal;
     font-weight: 400;
@@ -80,5 +91,10 @@ header {
     // line-height: 29px;
     letter-spacing: -0.305053px;
     text-align: left;
+    padding-bottom: 1em;
+  }
+  .phoneDisplay img{
+    width: 100%;
+    height: auto;
   }
 }
