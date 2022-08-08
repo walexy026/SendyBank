@@ -275,6 +275,17 @@ main .sectionTwo .cards > div p {
   line-height: 24.52px;
 }
 
+.ourPartner {
+  margin-top: 2em;
+  padding: 1em 2em;
+  text-align: center;
+  background-color: rgba(2, 84, 64, 0.1);
+  color: #484848;
+}
+.ourPartner h2 {
+  padding: 0.5em 0;
+}
+
 @media screen and (max-width: 768px) {
   .SectionThree {
     display: flex;
