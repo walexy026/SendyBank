@@ -1,17 +1,21 @@
 @import "./color";
 @import "./config";
-// h1 {
-//   color: $primary-color;
-// }
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+}
 header {
   padding: 2em;
   nav {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     ul {
       display: flex;
-      justify-content: center;
+      justify-content: space-between;
       align-items: center;
       gap: 1.5em;
       li {
@@ -51,8 +55,8 @@ header {
     display: block;
   }
   header nav {
-    padding: 2em 1em;
-    gap: 10em;
+    // padding: 2em 1em;
+    // gap: 10em;
   }
   header nav ul {
     display: none;
@@ -68,11 +72,11 @@ header {
 }
 
 main {
-  // padding-left: 2em;
+  padding: 2em;
   .heroSection {
     display: flex;
     justify-content: space-around;
-    padding: 2em;
+    // padding: 2em;
     // align-items: flex-start;
     .heroText {
       // flex: 50%;
@@ -110,7 +114,7 @@ main {
     }
   }
   .sectionTwo {
-    padding: 2em;
+    // padding: 2em;
     h2 {
       text-align: center;
       font-size: 32px;
@@ -119,7 +123,7 @@ main {
     .cards {
       display: flex;
       flex-wrap: wrap;
-      justify-content: center;
+      // justify-content: center;
       gap: 2em;
     }
     .cards > div {
@@ -144,13 +148,15 @@ main {
   justify-content: space-around;
   padding: 2em;
   .easyText {
+    // flex: 90%;
     h2 {
       // width: 539px;
       color: $h22text;
       font-weight: 700;
       font-size: 32px;
-      line-height: 30px;
-      letter-spacing: -0.305053px;
+      margin: auto;
+      // line-height: 30px;
+      // letter-spacing: -0.305053px;
     }
     p {
       
@@ -160,10 +166,119 @@ main {
       line-height: 29px;
       letter-spacing: -0.305053px;
     }
+    button{
+      padding: 1em;
+      color: $buttonText;
+      background-color: $primary-color;
+      border: none;
+      border-radius: 5px;
+      &:hover{
+        opacity: 0.5;
+        cursor: pointer;
+      }
+    }
   }
   .cashTransfer img {
     width: 100%;
     height: auto;
+  }
+}
+.sectionFour{
+  display: flex;
+  justify-content: space-between;
+  h2{
+    color: $h22text;
+      font-weight: 700;
+      font-size: 32px;
+  }
+  p{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 29px;
+    letter-spacing: -0.305053px;
+  }
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+.sectionFive{
+  display: flex;
+  justify-content: space-between;
+  h2{
+    color: $h22text;
+      font-weight: 700;
+      font-size: 32px;
+  }
+  p{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 29px;
+    letter-spacing: -0.305053px;
+  }
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+.sectionSix{
+  display: flex;
+  justify-content: space-between;
+  h2{
+    color: $h22text;
+      font-weight: 700;
+      font-size: 32px;
+  }
+  p{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 29px;
+    letter-spacing: -0.305053px;
+  }
+  button{
+    padding: 1em;
+    color: $buttonText;
+    background-color: $primary-color;
+    border: none;
+    border-radius: 5px;
+    &:hover{
+      // opacity: 0.5;
+      cursor: pointer;
+    }
+  }
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+.sectionSeven{
+  .carousel{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .carousel > div{
+    margin-top: 2em;
+    // height: /50px;
+    padding: 2em;
+    background: #ffffff;
+    box-shadow: 0px 3.81317px 19.0658px rgba(0, 0, 0, 0.15);
+    border-radius: 3.81317px;
+    p {
+      color: $pText;
+      text-align: left;
+      width: 239.28px;
+      line-height: 24.52px;
+
+      // display: none;
+    }
+    h6{
+      color: $pText;
+      text-align: left;
+      line-height: 24.52px;
+    }
   }
 }
 @media screen and (max-width:768px ){
@@ -174,4 +289,11 @@ main {
     align-content: center;
     text-align: center;
   } 
+  .sectionFour{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+  }
 }
