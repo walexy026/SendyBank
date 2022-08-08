@@ -109,27 +109,27 @@ main {
       height: auto;
     }
   }
-  .sectionTwo{
+  .sectionTwo {
     padding: 2em;
-     h2 {
+    h2 {
       text-align: center;
       font-size: 32px;
       // width: 395px;
     }
-    .cards{
+    .cards {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
       gap: 2em;
     }
     .cards > div {
-margin-top: 2em;
+      margin-top: 2em;
       height: 150px;
       padding: 2em;
       background: #ffffff;
       box-shadow: 0px 3.81317px 19.0658px rgba(0, 0, 0, 0.15);
       border-radius: 3.81317px;
-      p{
+      p {
         color: $pText;
         text-align: left;
         width: 239.28px;
@@ -137,4 +137,41 @@ margin-top: 2em;
       }
     }
   }
+}
+
+.SectionThree {
+  display: flex;
+  justify-content: space-around;
+  padding: 2em;
+  .easyText {
+    h2 {
+      // width: 539px;
+      color: $h22text;
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 30px;
+      letter-spacing: -0.305053px;
+    }
+    p {
+      
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 29px;
+      letter-spacing: -0.305053px;
+    }
+  }
+  .cashTransfer img {
+    width: 100%;
+    height: auto;
+  }
+}
+@media screen and (max-width:768px ){
+  .SectionThree{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+  } 
 }
