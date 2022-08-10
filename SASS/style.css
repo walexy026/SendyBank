@@ -286,6 +286,15 @@ main .sectionTwo .cards > div p {
   padding: 0.5em 0;
 }
 
+.sectionSeven {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer {
+  background-color: #058868;
+}
+
 @media screen and (max-width: 768px) {
   .SectionThree {
     display: flex;

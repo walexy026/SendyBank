@@ -300,14 +300,18 @@ main {
 // width: 100%;
 // height: auto;
 //   }
+
 }
+
 .sectionSeven{
   display: flex;
   justify-content: space-between;
 
 }
 
-
+footer{
+  background-color: $primary-color;
+}
 
 
 @media screen and (max-width:768px ){
