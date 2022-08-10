@@ -286,7 +286,9 @@ main .sectionTwo .cards > div p {
   padding: 0.5em 0;
 }
 
-.sectionSeven {
+.sectionEight {
+  background-color: rgba(2, 84, 64, 0.1);
+  margin-top: 2em;
   display: flex;
   justify-content: space-between;
 }
@@ -326,6 +328,22 @@ footer ul li a {
     justify-content: center;
     align-content: center;
     text-align: center;
+  }
+  .sectionFive {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+  }
+  .sectionSix {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .sectionEight {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
   .footerContent {
     display: flex;
