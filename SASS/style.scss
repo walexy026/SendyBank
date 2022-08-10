@@ -1,11 +1,11 @@
 @import "./color";
 @import "./config";
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
 }
 header {
   padding: 2em;
@@ -159,20 +159,19 @@ main {
       // letter-spacing: -0.305053px;
     }
     p {
-      
       font-style: normal;
       font-weight: 400;
       font-size: 20px;
       line-height: 29px;
       letter-spacing: -0.305053px;
     }
-    button{
+    button {
       padding: 1em;
       color: $buttonText;
       background-color: $primary-color;
       border: none;
       border-radius: 5px;
-      &:hover{
+      &:hover {
         opacity: 0.5;
         cursor: pointer;
       }
@@ -183,15 +182,15 @@ main {
     height: auto;
   }
 }
-.sectionFour{
+.sectionFour {
   display: flex;
   justify-content: space-between;
-  h2{
+  h2 {
     color: $h22text;
-      font-weight: 700;
-      font-size: 32px;
+    font-weight: 700;
+    font-size: 32px;
   }
-  p{
+  p {
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -203,15 +202,15 @@ main {
     height: auto;
   }
 }
-.sectionFive{
+.sectionFive {
   display: flex;
   justify-content: space-between;
-  h2{
+  h2 {
     color: $h22text;
-      font-weight: 700;
-      font-size: 32px;
+    font-weight: 700;
+    font-size: 32px;
   }
-  p{
+  p {
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -223,28 +222,28 @@ main {
     height: auto;
   }
 }
-.sectionSix{
+.sectionSix {
   display: flex;
   justify-content: space-between;
-  h2{
+  h2 {
     color: $h22text;
-      font-weight: 700;
-      font-size: 32px;
+    font-weight: 700;
+    font-size: 32px;
   }
-  p{
+  p {
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
     line-height: 29px;
     letter-spacing: -0.305053px;
   }
-  button{
+  button {
     padding: 1em;
     color: $buttonText;
     background-color: $primary-color;
     border: none;
     border-radius: 5px;
-    &:hover{
+    &:hover {
       // opacity: 0.5;
       cursor: pointer;
     }
@@ -254,12 +253,12 @@ main {
     height: auto;
   }
 }
-.sectionSeven{
-  .carousel{
+.sectionSeven {
+  .carousel {
     display: flex;
     flex-wrap: wrap;
   }
-  .carousel > div{
+  .carousel > div {
     margin-top: 2em;
     // height: /50px;
     padding: 2em;
@@ -275,14 +274,14 @@ main {
 
       // display: none;
     }
-    h6{
+    h6 {
       color: $pText;
       text-align: left;
       line-height: 24.52px;
     }
   }
 }
-.ourPartner{
+.ourPartner {
   margin-top: 2em;
   // margin-right: 3em;
   // margin-left: 3em;
@@ -290,43 +289,68 @@ main {
   text-align: center;
   background-color: $partner;
   color: $h22text;
-  h2{
+  h2 {
     padding: 0.5em 0;
   }
-//   .partners{
-//     display:flex;
-//   }
-//   .partners img{
-// width: 100%;
-// height: auto;
-//   }
-
+  //   .partners{
+  //     display:flex;
+  //   }
+  //   .partners img{
+  // width: 100%;
+  // height: auto;
+  //   }
 }
 
-.sectionSeven{
+.sectionSeven {
   display: flex;
   justify-content: space-between;
-
 }
 
-footer{
+footer {
   background-color: $primary-color;
+  .footerContent {
+    display: flex;
+    justify-content: space-between;
+    // align-items: flex-start;
+  }
+  ul{
+    li{
+      list-style-type: none;
+      line-height: 1.5em;
+      &:nth-child(1){
+        font-size: larger;
+        font-weight: 700;
+        padding-bottom: 1em;
+
+      }
+      a{
+        text-decoration: none;
+        color: $buttonText;
+      }
+    }
+  }
 }
 
-
-@media screen and (max-width:768px ){
-  .SectionThree{
+@media screen and (max-width: 768px) {
+  .SectionThree {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-content: center;
     text-align: center;
-  } 
-  .sectionFour{
+  }
+  .sectionFour {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-content: center;
+    text-align: center;
+  }
+  .footerContent{
+    display: flex;
+    // justify-content: center;
+    flex-direction: column;
+    // align-items: center;
     text-align: center;
   }
 }

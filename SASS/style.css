@@ -294,6 +294,23 @@ main .sectionTwo .cards > div p {
 footer {
   background-color: #058868;
 }
+footer .footerContent {
+  display: flex;
+  justify-content: space-between;
+}
+footer ul li {
+  list-style-type: none;
+  line-height: 1.5em;
+}
+footer ul li:nth-child(1) {
+  font-size: larger;
+  font-weight: 700;
+  padding-bottom: 1em;
+}
+footer ul li a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
 
 @media screen and (max-width: 768px) {
   .SectionThree {
@@ -308,6 +325,11 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-content: center;
+    text-align: center;
+  }
+  .footerContent {
+    display: flex;
+    flex-direction: column;
     text-align: center;
   }
 }/*# sourceMappingURL=style.css.map */
