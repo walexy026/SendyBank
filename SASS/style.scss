@@ -1,32 +1,43 @@
 @import "./color";
-@import "./config";
+@import "./mixins";
+@import "./reset";
+@import "./media";
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Lato", sans-serif;
-}
+
 header {
-  padding: 2em;
+  @include flexCenter;
+  padding: 2em 3em;
+  a img{
+    // padding-left: 2em
+  }
   nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    ul {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 1.5em;
+    // @include flexCenter;
+    // padding-left: 6em;
+    // display: flex;
+    // justify-content: space-between;
+    // align-items: center;
+    ul { 
+    @include flexCenter;
+      // display: flex;
+      // justify-content: space-between;
+      // align-items: center;
+      gap: 1em;
       li {
+        padding-right: 1em;
         list-style: none;
+        // .active{
+        //   background-color: $primary-color;
+        //   color: $buttonText;
+        //   padding: 5px;
+        // }
         a {
+          font-size: 15px;
           color: $pText;
           text-decoration: none;
           &:hover {
             background-color: $primary-color;
             color: #ffffff;
-            padding: 5px;
+            padding: 3px;
             border-radius: 5px;
             transition: all ease;
             transition-delay: 2ms;
@@ -34,30 +45,30 @@ header {
         }
       }
     }
-    button {
-      background-color: $primary-color;
-      color: $buttonText;
-      padding: 1em;
-      border-radius: 10px;
-      border: none;
-      &:hover {
-        opacity: 0.5;
-        cursor: pointer;
-      }
+  }
+  button {
+    background-color: $primary-color;
+    color: $buttonText;
+    padding: 1em;
+    border-radius: 10px;
+    border: none;
+    &:hover {
+      opacity: 0.5;
+      cursor: pointer;
     }
-    span svg {
-      display: none;
-    }
+  }
+  span svg {
+    display: none;
   }
 }
 @media screen and (max-width: 768px) {
-  header nav span svg {
+  header span svg {
     display: block;
   }
-  header nav {
+  // header nav {
     // padding: 2em 1em;
     // gap: 10em;
-  }
+  // }
   header nav ul {
     display: none;
   }
@@ -69,10 +80,14 @@ header {
     flex-direction: column;
     justify-content: center;
   }
+  .heroText p{
+    width: 276px !important;
+    // display: none;
+  }
 }
 
 main {
-  padding: 2em;
+  padding: 3em;
   .heroSection {
     display: flex;
     justify-content: space-around;
@@ -81,13 +96,15 @@ main {
     .heroText {
       // flex: 50%;
       // text-align: center;
+      margin-top: 2em;
+      // transform: translateX(10px);
       display: flex;
       justify-content: flex-start;
       align-items: flex-start;
       flex-direction: column;
     }
     .heroText h1 {
-      // width: 286px;
+      width: 286px;
       // align-content: center;
       color: $h1Text;
       font-weight: 800;
@@ -98,7 +115,7 @@ main {
       padding-bottom: 1em;
     }
     .heroText p {
-      // width: 326px;
+      width: 326px;
       color: $pText;
       font-style: normal;
       font-weight: 400;
@@ -123,12 +140,12 @@ main {
     .cards {
       display: flex;
       flex-wrap: wrap;
-      // justify-content: center;
+      justify-content: center;
       gap: 2em;
     }
     .cards > div {
       margin-top: 2em;
-      height: 150px;
+      // height: 150px;
       padding: 2em;
       background: #ffffff;
       box-shadow: 0px 3.81317px 19.0658px rgba(0, 0, 0, 0.15);
@@ -183,8 +200,9 @@ main {
   }
 }
 .sectionFour {
-  display: flex;
-  justify-content: space-between;
+  @include flexCenter;
+  // display: flex;
+  // justify-content: space-between;
   h2 {
     color: $h22text;
     font-weight: 700;
@@ -203,24 +221,26 @@ main {
   }
 }
 .sectionFive {
-  display: flex;
-  justify-content: space-between;
-  h2 {
-    color: $h22text;
-    font-weight: 700;
-    font-size: 32px;
-  }
-  p {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 29px;
-    letter-spacing: -0.305053px;
-  }
-  img {
-    width: 100%;
-    height: auto;
-  }
+  @extend .sectionFour;
+  // display: flex;
+  // justify-content: space-between;
+  // h2 {
+  //   color: $h22text;
+  //   font-weight: 700;
+  //   font-size: 32px;
+  // }
+  // p {
+
+  //   font-style: normal;
+  //   font-weight: 400;
+  //   font-size: 20px;
+  //   line-height: 29px;
+  //   letter-spacing: -0.305053px;
+  // }
+  // img {
+  //   width: 100%;
+  //   height: auto;
+  // }
 }
 .sectionSix {
   display: flex;

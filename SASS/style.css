@@ -1,28 +1,3 @@
-@media screen and (max-width: 302px) {
-  header nav {
-    gap: 6em !important;
-  }
-}
-@media screen and (max-width: 768px) {
-  header nav span svg {
-    display: block;
-  }
-  header nav {
-    padding: 2em 1em;
-    gap: 10em;
-  }
-  header nav ul {
-    display: none;
-  }
-  button {
-    display: none;
-  }
-  .heroSection {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-}
 * {
   margin: 0;
   padding: 0;
@@ -30,50 +5,6 @@
   font-family: "Lato", sans-serif;
 }
 
-header {
-  padding: 2em;
-}
-header nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-header nav ul {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 1.5em;
-}
-header nav ul li {
-  list-style: none;
-}
-header nav ul li a {
-  color: #7A7A7A;
-  text-decoration: none;
-}
-header nav ul li a:hover {
-  background-color: #058868;
-  color: #ffffff;
-  padding: 5px;
-  border-radius: 5px;
-  transition: all ease;
-  transition-delay: 2ms;
-}
-header nav button {
-  background-color: #058868;
-  color: #FFFFFF;
-  padding: 1em;
-  border-radius: 10px;
-  border: none;
-}
-header nav button:hover {
-  opacity: 0.5;
-  cursor: pointer;
-}
-header nav span svg {
-  display: none;
-}
-
 @media screen and (max-width: 768px) {
   header nav span svg {
     display: block;
@@ -90,20 +21,85 @@ header nav span svg {
     justify-content: center;
   }
 }
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2em 3em;
+}
+header nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1em;
+}
+header nav ul li {
+  padding-right: 1em;
+  list-style: none;
+}
+header nav ul li a {
+  font-size: 15px;
+  color: #7A7A7A;
+  text-decoration: none;
+}
+header nav ul li a:hover {
+  background-color: #058868;
+  color: #ffffff;
+  padding: 3px;
+  border-radius: 5px;
+  transition: all ease;
+  transition-delay: 2ms;
+}
+header button {
+  background-color: #058868;
+  color: #FFFFFF;
+  padding: 1em;
+  border-radius: 10px;
+  border: none;
+}
+header button:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+header span svg {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  header span svg {
+    display: block;
+  }
+  header nav ul {
+    display: none;
+  }
+  button {
+    display: none;
+  }
+  .heroSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .heroText p {
+    width: 276px !important;
+  }
+}
 main {
-  padding: 2em;
+  padding: 3em;
 }
 main .heroSection {
   display: flex;
   justify-content: space-around;
 }
 main .heroSection .heroText {
+  margin-top: 2em;
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
   flex-direction: column;
 }
 main .heroSection .heroText h1 {
+  width: 286px;
   color: #0D1321;
   font-weight: 800;
   font-size: 32px;
@@ -111,6 +107,7 @@ main .heroSection .heroText h1 {
   padding-bottom: 1em;
 }
 main .heroSection .heroText p {
+  width: 326px;
   color: #7A7A7A;
   font-style: normal;
   font-weight: 400;
@@ -129,11 +126,11 @@ main .sectionTwo h2 {
 main .sectionTwo .cards {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 2em;
 }
 main .sectionTwo .cards > div {
   margin-top: 2em;
-  height: 150px;
   padding: 2em;
   background: #ffffff;
   box-shadow: 0px 3.81317px 19.0658px rgba(0, 0, 0, 0.15);
@@ -179,44 +176,24 @@ main .sectionTwo .cards > div p {
   height: auto;
 }
 
-.sectionFour {
+.sectionFour, .sectionFive {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
-.sectionFour h2 {
+.sectionFour h2, .sectionFive h2 {
   color: #484848;
   font-weight: 700;
   font-size: 32px;
 }
-.sectionFour p {
+.sectionFour p, .sectionFive p {
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 29px;
   letter-spacing: -0.305053px;
 }
-.sectionFour img {
-  width: 100%;
-  height: auto;
-}
-
-.sectionFive {
-  display: flex;
-  justify-content: space-between;
-}
-.sectionFive h2 {
-  color: #484848;
-  font-weight: 700;
-  font-size: 32px;
-}
-.sectionFive p {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 29px;
-  letter-spacing: -0.305053px;
-}
-.sectionFive img {
+.sectionFour img, .sectionFive img {
   width: 100%;
   height: auto;
 }
@@ -322,7 +299,7 @@ footer ul li a {
     align-content: center;
     text-align: center;
   }
-  .sectionFour {
+  .sectionFour, .sectionFive {
     display: flex;
     flex-direction: column;
     justify-content: center;
