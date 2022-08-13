@@ -191,23 +191,23 @@ main .sectionTwo .cards > div p {
   height: auto;
 }
 
-.sectionFour, .sectionFive {
+.sectionFour, .sectionSix, .sectionFive {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 2em;
 }
-.sectionFour .researchText, .sectionFive .researchText {
+.sectionFour .researchText, .sectionSix .researchText, .sectionFive .researchText {
   flex: 56%;
 }
-.sectionFour .researchText h2, .sectionFive .researchText h2 {
+.sectionFour .researchText h2, .sectionSix .researchText h2, .sectionFive .researchText h2 {
   text-align: left;
   color: #484848;
   font-weight: 700;
   font-size: 32px;
   padding-bottom: 1em;
 }
-.sectionFour p, .sectionFive p {
+.sectionFour p, .sectionSix p, .sectionFive p {
   padding-bottom: 1em;
   text-align: left;
   font-style: normal;
@@ -216,21 +216,43 @@ main .sectionTwo .cards > div p {
   line-height: 29px;
   letter-spacing: -0.305053px;
 }
-.sectionFour img, .sectionFive img {
+.sectionFour img, .sectionSix img, .sectionFive img {
   width: 100%;
   height: auto;
 }
 
-.sectionSix {
-  display: flex;
-  justify-content: space-between;
-}
-.sectionSix h2 {
+.sectionFive h2 {
   color: #484848;
   font-weight: 700;
   font-size: 32px;
+  text-align: left;
+  padding-bottom: 1em;
+}
+.sectionFive p {
+  text-align: left;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 29px;
+  letter-spacing: -0.305053px;
+}
+.sectionFive img {
+  width: 100%;
+  height: auto;
+}
+
+.sectionSix .sendyText {
+  flex: 50%;
+}
+.sectionSix h2 {
+  text-align: left;
+  color: #484848;
+  font-weight: 700;
+  font-size: 32px;
+  padding-bottom: 1em;
 }
 .sectionSix p {
+  text-align: left;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -258,7 +280,8 @@ main .sectionTwo .cards > div p {
 }
 .sectionSeven .carousel > div {
   margin-top: 2em;
-  padding: 2em;
+  padding: 1.2em;
+  gap: 5em;
   background: #ffffff;
   box-shadow: 0px 3.81317px 19.0658px rgba(0, 0, 0, 0.15);
   border-radius: 3.81317px;
@@ -266,7 +289,7 @@ main .sectionTwo .cards > div p {
 .sectionSeven .carousel > div p {
   color: #7A7A7A;
   text-align: left;
-  width: 239.28px;
+  width: 200.28px;
   line-height: 24.52px;
 }
 .sectionSeven .carousel > div h6 {
@@ -277,9 +300,11 @@ main .sectionTwo .cards > div p {
 
 .ourPartner {
   margin-top: 2em;
-  padding: 1em 2em;
+  padding: 2em 2em;
   text-align: center;
   background-color: rgba(2, 84, 64, 0.1);
+  margin-left: 10em;
+  margin-right: 10em;
   color: #484848;
 }
 .ourPartner h2 {
@@ -322,7 +347,7 @@ footer ul li a {
     align-content: center;
     text-align: center;
   }
-  .sectionFour, .sectionFive {
+  .sectionFour, .sectionFive, .sectionSix {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -339,6 +364,9 @@ footer ul li a {
     display: flex;
     flex-direction: column;
     justify-content: center;
+  }
+  .ourPartner {
+    margin: 2em 0;
   }
   .sectionEight {
     display: flex;
