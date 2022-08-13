@@ -227,14 +227,23 @@ main {
 }
 .sectionFour {
   @include flexCenter;
+  gap: 2em;
   // display: flex;
   // justify-content: space-between;
+  .researchText{
+    flex: 56%;
+   
   h2 {
+    text-align: left;
     color: $h22text;
     font-weight: 700;
     font-size: 32px;
+    padding-bottom: 1em;
+  }
   }
   p {
+    padding-bottom: 1em;
+    text-align: left;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;

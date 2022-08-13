@@ -195,13 +195,21 @@ main .sectionTwo .cards > div p {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 2em;
 }
-.sectionFour h2, .sectionFive h2 {
+.sectionFour .researchText, .sectionFive .researchText {
+  flex: 56%;
+}
+.sectionFour .researchText h2, .sectionFive .researchText h2 {
+  text-align: left;
   color: #484848;
   font-weight: 700;
   font-size: 32px;
+  padding-bottom: 1em;
 }
 .sectionFour p, .sectionFive p {
+  padding-bottom: 1em;
+  text-align: left;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
