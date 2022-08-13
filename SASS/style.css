@@ -80,8 +80,11 @@ header span svg {
     flex-direction: column;
     justify-content: center;
   }
+  .heroText h1 {
+    width: 260px !important;
+  }
   .heroText p {
-    width: 276px !important;
+    width: 263px !important;
   }
 }
 main {
@@ -145,15 +148,27 @@ main .sectionTwo .cards > div p {
 .SectionThree {
   display: flex;
   justify-content: space-around;
-  padding: 2em;
+  margin-top: 2em;
+  gap: 2em;
+}
+.SectionThree .easyText {
+  flex: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 .SectionThree .easyText h2 {
+  padding-top: 1em;
+  text-align: left;
   color: #484848;
   font-weight: 700;
   font-size: 32px;
-  margin: auto;
+  letter-spacing: -0.305053px;
 }
 .SectionThree .easyText p {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  text-align: left;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;

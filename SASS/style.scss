@@ -80,10 +80,17 @@ header {
     flex-direction: column;
     justify-content: center;
   }
+  .heroText h1{
+    width: 260px !important;
+  }
   .heroText p{
-    width: 276px !important;
+    width: 263px !important;
     // display: none;
   }
+   .easyText h2, .easyText p{
+    //  width: -1px !important;
+    //  display: none;
+   }
 }
 
 main {
@@ -136,6 +143,8 @@ main {
       text-align: center;
       font-size: 32px;
       // width: 395px;
+      // width: 375px;
+    // transform: translateX(281px);
     }
     .cards {
       display: flex;
@@ -163,19 +172,36 @@ main {
 .SectionThree {
   display: flex;
   justify-content: space-around;
-  padding: 2em;
+  margin-top: 2em;
+  gap: 2em;
+  // padding: 2em;
   .easyText {
+    flex: 50%;
+    // margin-left: 1em;
+    display: flex;
+    // gap: 2em;
+    flex-direction: column;
+    align-items: flex-start;
+    // flex-direction: column;
     // flex: 90%;
     h2 {
+      padding-top: 1em;
+      text-align: left;
       // width: 539px;
+      // margin-left: 1em;
       color: $h22text;
       font-weight: 700;
       font-size: 32px;
-      margin: auto;
+      // margin: auto;
       // line-height: 30px;
-      // letter-spacing: -0.305053px;
+      letter-spacing: -0.305053px;
     }
     p {
+      // margin-left: 1em;
+      padding-top: 1em;
+      padding-bottom: 1em;
+      text-align: left;
+      // width: 539px;
       font-style: normal;
       font-weight: 400;
       font-size: 20px;
