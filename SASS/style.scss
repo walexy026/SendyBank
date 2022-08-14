@@ -373,10 +373,37 @@ main {
   margin-top: 2em;
   display: flex;
   justify-content: space-between;
+  margin: 2em 10em;
+  .appText{
+    h2{
+      text-align: left;
+      color: $h22text;
+      font-weight: 700;
+      font-size: 32px;
+      padding-bottom: 1em;
+    }
+    p{
+      text-align: left;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 29px;
+      letter-spacing: -0.305053px;
+      padding-bottom: 1em;
+    }
+  }
+  .womanHoldPhone{
+    transform: translateX(126px);
+  }
+  .womanHoldPhone img{
+    width: 100%;
+    height: auto;
+  }
 }
 
 footer {
   background-color: $primary-color;
+  padding: 2em;
   .footerContent {
     display: flex;
     justify-content: space-between;
@@ -396,6 +423,11 @@ footer {
         color: $buttonText;
       }
     }
+  }
+  aside p{
+    text-align: center;
+    padding-top: 1em;
+    color: $buttonText;
   }
 }
 
@@ -432,6 +464,7 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin: 2em 0;
   }
   .footerContent {
     display: flex;
