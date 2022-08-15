@@ -6,9 +6,9 @@
 header {
   @include flexCenter;
   padding: 2em 3em;
-  a img {
+  // a img {
     // padding-left: 2em
-  }
+  // }
   nav {
     // @include flexCenter;
     // padding-left: 6em;
@@ -80,17 +80,19 @@ header {
     justify-content: center;
   }
   .heroText h1 {
-    width: 260px !important;
+    width: 208px !important;
+    text-align: center;
   }
   .heroText p {
-    width: 263px !important;
+    width: 214px !important;
+    text-align: center;
     // display: none;
   }
-  .easyText h2,
-  .easyText p {
+  // .easyText h2,
+  // .easyText p {
     //  width: -1px !important;
     //  display: none;
-  }
+  // }
 }
 
 main {
@@ -318,9 +320,15 @@ main {
   }
 }
 .sectionSeven {
+  display: none;
+  h2{
+    text-align: center;
+  }
   .carousel {
     display: flex;
-    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    // flex-wrap: wrap;
   }
   .carousel > div {
     margin-top: 2em;
@@ -375,6 +383,7 @@ main {
   justify-content: space-between;
   margin: 2em 10em;
   .appText{
+    padding-left: 1em;
     h2{
       text-align: left;
       color: $h22text;
@@ -413,9 +422,14 @@ footer {
     li {
       list-style-type: none;
       line-height: 1.5em;
+      font-weight: 100;
       &:nth-child(1) {
         font-size: larger;
         font-weight: 700;
+        padding-bottom: 0.5em;
+      }
+      &:last-child{
+        // display: none;
         padding-bottom: 1em;
       }
       a {
@@ -433,37 +447,48 @@ footer {
 
 @media screen and (max-width: 768px) {
   .SectionThree {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
+    @include flexAlign;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+    // align-content: center;
     text-align: center;
   }
   .sectionFour {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
+    @include flexAlign;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+    // align-content: center;
     text-align: center;
   }
   .sectionFive {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
+    @include flexAlign;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+    // align-content: center;
   }
   .sectionSix {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    @include flexAlign;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+  }
+  .carousel{
+    @include flexAlign;
+    // display: flex;
+    // justify-content: center;
+    // flex-direction: column;
   }
   .ourPartner{
     margin: 2em 0;
   }
   .sectionEight {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    @include flexAlign;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
     margin: 2em 0;
   }
   .footerContent {

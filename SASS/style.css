@@ -81,10 +81,12 @@ header span svg {
     justify-content: center;
   }
   .heroText h1 {
-    width: 260px !important;
+    width: 208px !important;
+    text-align: center;
   }
   .heroText p {
-    width: 263px !important;
+    width: 214px !important;
+    text-align: center;
   }
 }
 main {
@@ -274,9 +276,16 @@ main .sectionTwo .cards > div p {
   height: auto;
 }
 
+.sectionSeven {
+  display: none;
+}
+.sectionSeven h2 {
+  text-align: center;
+}
 .sectionSeven .carousel {
   display: flex;
-  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 .sectionSeven .carousel > div {
   margin-top: 2em;
@@ -318,6 +327,9 @@ main .sectionTwo .cards > div p {
   justify-content: space-between;
   margin: 2em 10em;
 }
+.sectionEight .appText {
+  padding-left: 1em;
+}
 .sectionEight .appText h2 {
   text-align: left;
   color: #484848;
@@ -353,10 +365,14 @@ footer .footerContent {
 footer ul li {
   list-style-type: none;
   line-height: 1.5em;
+  font-weight: 100;
 }
 footer ul li:nth-child(1) {
   font-size: larger;
   font-weight: 700;
+  padding-bottom: 0.5em;
+}
+footer ul li:last-child {
   padding-bottom: 1em;
 }
 footer ul li a {
@@ -394,6 +410,13 @@ footer aside p {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-content: center;
+  }
+  .carousel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
   }
   .ourPartner {
     margin: 2em 0;
@@ -402,6 +425,7 @@ footer aside p {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-content: center;
     margin: 2em 0;
   }
   .footerContent {
